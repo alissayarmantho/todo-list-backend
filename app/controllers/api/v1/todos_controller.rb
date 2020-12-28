@@ -1,8 +1,9 @@
 module Api 
     module V1
         class TodosController < ApplicationController
+            skip_before_action :verify_authenticity_token, :only => [:create, :update]
             def index
-                todos = Todo.order('created_at DESC');
+                todos = Todo.order('created_at');
                 render json: {status: 'SUCCESS', message: 'Loaded all Todo Content', data: todos}, status: :ok
             end
 
@@ -13,6 +14,7 @@ module Api
 
             def create
                 todo = Todo.new(todo_params)
+                puts todo
                 if todo.save
                     render json: {status: 'SUCCESS', message: 'Todo Content saved', data: todo}, status: :ok
                 else 
@@ -38,7 +40,7 @@ module Api
             private
 
             def todo_params
-                params.permit(:content)
+                params.permit(:content, :category_id)
             end
         end
     end
