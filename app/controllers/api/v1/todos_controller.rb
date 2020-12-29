@@ -12,11 +12,19 @@ module Api
                     todos = Todo.order('created_at');
                     render :json => todos, status: :ok
                 end
+                rescue StandardError => e
+                    render json: {
+                    error: e.to_s
+                    }, status: :internal_server_error
             end
 
             def show
                 todo = Todo.find(params[:id])
                 render :json => todo, status: :ok
+                rescue ActiveRecord::RecordNotFound => e
+                    render json: {
+                    error: e.to_s
+                    }, status: :not_found
             end
 
             def create
@@ -27,12 +35,20 @@ module Api
                 else 
                     render json: {message: 'Todo Content not saved', data: todo.errors}, status: :unprocessable_entity
                 end
+                rescue StandardError => e
+                    render json: {
+                    error: e.to_s
+                    }, status: :internal_server_error
             end
 
             def destroy
                 todo = Todo.find(params[:id])
                 todo.destroy
                 render json: {message: 'Deleted Todo', data: todo}, status: :ok
+                rescue ActiveRecord::RecordNotFound => e
+                    render json: {
+                    error: e.to_s
+                    }, status: :not_found
             end
 
             def update
@@ -42,6 +58,10 @@ module Api
                  else
                     render json: {message: 'Todo Content not updated', data: todo.errors}, status: :unprocessable_entity
                  end
+                rescue ActiveRecord::RecordNotFound => e
+                    render json: {
+                    error: e.to_s
+                    }, status: :not_found
             end
 
             private
