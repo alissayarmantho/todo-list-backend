@@ -1,11 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Alissa / A0223305W
 
-Things you may want to cover:
-
-* Ruby version
+* Ruby version : ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]
+  Rails version: 6.1.0
 
 * System dependencies
 
@@ -20,5 +18,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
