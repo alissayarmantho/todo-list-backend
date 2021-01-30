@@ -17,5 +17,5 @@
 * Write-up file for mid-assignment submission: [CVWO-WriteUp.docx](https://github.com/alissayarmantho/todo-list-backend/blob/master/CVWO-WriteUp.docx)
 * Screenshot files: [Proof1.png](https://github.com/alissayarmantho/todo-list-backend/blob/master/Proof1.png), [Proof2.png](https://github.com/alissayarmantho/todo-list-backend/blob/master/Proof2.png)
 
-**References**
+**References:**
 [Dockerfile for Rails](https://github.com/jahangiranwari/rails5-docker-heroku/blob/master/Dockerfile)
