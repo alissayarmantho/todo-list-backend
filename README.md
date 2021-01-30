@@ -8,11 +8,11 @@
 * Heroku link : [alissa-todolist-backend] (https://alissayarmantho-todo-backend.herokuapp.com/)
 * Netlify link (for frontend) : [alissa-todolist] (https://alissamanthou.netlify.app/)
   
-**Final assignment submission:
+**Final assignment submission:**
 
 * Write-up file for final-assignment submission : [CVWO-finalWriteUp.pdf](https://github.com/alissayarmantho/todo-list-backend/blob/master/CVWO-finalWriteUp.pdf)
 
-**Mid-assignment submission:
+**Mid-assignment submission:**
 
 * Write-up file for mid-assignment submission: [CVWO-WriteUp.docx](https://github.com/alissayarmantho/todo-list-backend/blob/master/CVWO-WriteUp.docx)
 * Screenshot files: [Proof1.png](https://github.com/alissayarmantho/todo-list-backend/blob/master/Proof1.png), [Proof2.png](https://github.com/alissayarmantho/todo-list-backend/blob/master/Proof2.png)
